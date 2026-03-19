@@ -51,8 +51,6 @@ cd patient-registration-challenge
 ```bash
 cd backend
 cp .env.example .env
-php artisan key:generate
-
 # Configure Mailtrap credentials in .env:
 # MAIL_USERNAME=your_mailtrap_username
 # MAIL_PASSWORD=your_mailtrap_password
@@ -66,11 +64,13 @@ docker-compose up -d
 ### 4. Setup Backend
 ```bash
 cd backend
-php artisan migrate
-php artisan storage:link
+docker-compose exec app composer install
+docker-compose exec app php artisan key:generate
+docker-compose exec app php artisan migrate
+docker-compose exec app php artisan storage:link
 
 # Start queue worker in background
-docker exec -d laravel_app php artisan queue:work
+docker-compose exec app php artisan queue:work
 ```
 
 ### 5. Setup Frontend
