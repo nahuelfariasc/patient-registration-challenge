@@ -1,0 +1,32 @@
+.patient-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 400px;
+}
+
+.patient-form__group {
+  display: flex;
+  gap: 8px;
+
+  input {
+    flex: 1;
+  }
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  animation: fadeIn 0.2s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-2px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,11 @@
+.patients-actions {
+  display: flex;
+  gap: 16px;
+}
+
+.patients-grid {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+}

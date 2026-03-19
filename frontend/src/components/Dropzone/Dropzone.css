@@ -1,0 +1,18 @@
+.dropzone {
+  border: 2px dashed #aaa;
+  padding: 20px;
+  text-align: center;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.dropzone:hover {
+  border-color: #333;
+}
+
+.file-name {
+  margin-top: 8px;
+  font-size: 12px;
+  color: #555;
+}

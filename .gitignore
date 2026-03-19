@@ -1,0 +1,49 @@
+# Dependencies
+node_modules/
+*/node_modules/
+
+# Laravel
+backend/vendor/
+backend/.env
+backend/storage/app/*
+backend/storage/framework/cache/*
+backend/storage/framework/sessions/*
+backend/storage/framework/views/*
+backend/storage/logs/*
+backend/public/storage
+backend/public/hot
+backend/public/storage/public/*
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker
+docker-compose.override.yml
+
+# Logs
+*.log
+logs/
+
+# Cache
+.cache/
+.parcel-cache/
+
+# Build outputs
+dist/
+build/
+backend/public/build/
+
+# Environment files
+.env.local
+.env.*.local
+
+# Temporary files
+*.tmp
+*.temp

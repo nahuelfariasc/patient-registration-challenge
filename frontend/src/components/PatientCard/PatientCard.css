@@ -1,0 +1,51 @@
+.patient-card {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: white;
+  max-width: 300px;
+}
+
+.patient-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent);
+}
+
+.patient-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.patient-header img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.patient-body {
+  margin: 12px 0;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.patient-card.expanded .patient-body {
+  max-height: 200px;
+  opacity: 1;
+}
+
+.patient-expand {
+  color: var(--text-h);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.patient-expand:hover {
+  opacity: 0.8;
+}
