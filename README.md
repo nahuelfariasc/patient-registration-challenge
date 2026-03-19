@@ -43,7 +43,7 @@ A full-stack application for patient registration with validation, file upload, 
 
 ### 1. Clone repository
 ```bash
-git clone <repo-url>
+git clone https://github.com/nahuelfariasc/patient-registration-challenge
 cd patient-registration-challenge
 ```
 
